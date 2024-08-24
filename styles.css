@@ -1,0 +1,215 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #191d20;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 400px;
+  background-color: #0c0e10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Ensure the sidebar content is scrollable */
+}
+
+/* Hide scrollbar on the sidebar */
+.sidebar::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Optional: you can make the background transparent or the same color as the sidebar */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #0c0e10; /* Match this to the sidebar background color */
+}
+
+.small-logo {
+  display: block;
+  width: 58px;
+  height: 58px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 298px;
+  padding: 20px 70px 0 20px;
+  border-radius: 50%;
+}
+
+.logo h2 {
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.logo p {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  font-weight: 300;
+  color: #ff2424;
+}
+
+.nav-links h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 20px 0 10px;
+}
+
+.nav-links ul {
+  margin-left: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+.main-content {
+  margin-left: 400px;
+  width: calc(100% - 400px);
+  background-color: #111315;
+  overflow-y: auto; /* Make the right side scrollable */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #191d20;
+}
+
+input[type="text"] {
+  width: 812px;
+  height: 25px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #272a30;
+  color: #fff;
+  border: 1px solid #1c2025;
+}
+
+.btn-signup,
+.btn-login {
+  width: 176px;
+  height: 46px;
+  background-color: #ff2424;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+section.hero {
+  padding: 20px;
+  background-color: #111315;
+  border-radius: 30px 0 0 0;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 30px 0 0 0;
+}
+
+section.menu {
+  padding: 20px;
+  color: #ffffff;
+  background-color: #111315;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between; /* Ensure that items are evenly spaced */
+}
+
+.menu-items .item {
+  background-color: #1c2025;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: calc(33.33% - 20px); /* Adjust to fit three cards in a row */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.menu-items .item .container-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items in the center vertically */
+  width: 100%;
+}
+
+.menu-items .item .container-txt {
+  text-align: left;
+  width: auto; /* Allow the text container to take as much space as needed */
+  margin-right: auto; /* Push the button to the right */
+}
+
+.menu-items .item .container-btn {
+  text-align: right;
+  width: auto;
+}
+
+.menu-items .item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.menu-items .item p {
+  color: #ffffff;
+  margin: 10px 0 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.menu-items .item .price {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.menu-items .item .add-to-cart {
+  margin-top: auto;
+  background-color: #878787;
+  border: none;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+}
